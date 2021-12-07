@@ -23,24 +23,6 @@
 **更多**|**暂停前后台切换不黑屏；调整不同清晰度的支持；无缝切换支持；锁定/解锁全屏点击功能；进度条小窗口预览（测试）。**
 **自定义**|**可自定义渲染层、自定义管理层、自定义播放层（控制层）、自定义缓存层。**
 
-[![](https://jitpack.io/v/CarGuo/GSYVideoPlayer.svg)](https://jitpack.io/#CarGuo/GSYVideoPlayer)
-[![Build Status](https://app.travis-ci.com/CarGuo/GSYVideoPlayer.svg?branch=master)](https://app.travis-ci.com/CarGuo/GSYVideoPlayer)
-[![Github Actions](https://github.com/CarGuo/GSYVideoPlayer/workflows/CI/badge.svg)](https://github.com/CarGuo/GSYVideoPlayer/actions)
-
-[]()
-[![GitHub stars](https://img.shields.io/github/stars/CarGuo/GSYVideoPlayer.svg)](https://github.com/CarGuo/GSYVideoPlayer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/CarGuo/GSYVideoPlayer.svg)](https://github.com/CarGuo/GSYVideoPlayer/network)
-[![GitHub issues](https://img.shields.io/github/issues/CarGuo/GSYVideoPlayer.svg)](https://github.com/CarGuo/GSYVideoPlayer/issues)
-[![GitHub license](https://img.shields.io/github/license/CarGuo/GSYVideoPlayer.svg)](https://github.com/CarGuo/GSYVideoPlayer/blob/master/LICENSE)
-
-
-| 公众号   | 掘金     |  知乎    |  CSDN   |   简书
-|---------|---------|--------- |---------|---------|
-| GSYTech  |  [点我](https://juejin.im/user/582aca2ba22b9d006b59ae68/posts)    |   [点我](https://www.zhihu.com/people/carguo)       |   [点我](https://blog.csdn.net/ZuoYueLiang)  |   [点我](https://www.jianshu.com/u/6e613846e1ea)
-
-
-![](http://img.cdn.guoshuyu.cn/WeChat-Code)
-
 ### [--------------Demo APK 下载地址---------------](https://github.com/CarGuo/GSYVideoPlayer/releases)
 
 ## 一、使用依赖
@@ -68,23 +50,23 @@ allprojects {
 #### A、直接引入
 ```
  //完整版引入
- implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer:v8.1.8-lonbon'
 ```
 
 #### B、添加java和你想要的so支持：
 
 ```
- implementation 'com.github.carguo.GSYvideoplayer:gsyVideoPlayer-java:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.8-lonbon'
 
  //是否需要ExoPlayer模式
- implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.8-lonbon'
 
  //根据你的需求ijk模式的so
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-arm64:v8.1.7-release-jitpack'
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv7a:v8.1.7-release-jitpack'
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv5:v8.1.7-release-jitpack'
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x86:v8.1.7-release-jitpack'
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x64:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-arm64:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv7a:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv5:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x86:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x64:v8.1.8-lonbon'
 ```
 
 #### C、支持其他格式协议的（mpeg，rtsp, concat、crypto协议）
@@ -93,13 +75,13 @@ A、B普通版本支持263/264/265等，对于mpeg编码会有声音无画面情
 C 引入的so支持mpeg编码和其他补充协议，但是so包相对变大。
 
 ```
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.8-lonbon'
 
  //是否需要ExoPlayer模式
- implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.8-lonbon'
 
  //更多ijk的编码支持
- implementation 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-ex_so:v8.1.7-release-jitpack'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-ex_so:v8.1.8-lonbon'
 
 ```
 
@@ -164,17 +146,10 @@ ExoSourceManager.setExoMediaSourceInterceptListener(new ExoMediaSourceInterceptL
 
 ### [--- 更多依赖方式请点击 - ](https://github.com/CarGuo/GSYVideoPlayer/blob/master/doc/DEPENDENCIES.md)
 
-## 二、其他推荐
-
-### * QQ群，有兴趣的欢迎（平时吹水吐槽多，因为人数饱和，就是日常瞎扯）：174815284 。
-### * [Flutter Github客户端](https://github.com/CarGuo/gsy_github_app_flutter) 、[React Native Github客户端](https://github.com/CarGuo/GSYGithubAPP) 、 [Weex Github客户端](https://github.com/CarGuo/GSYGithubAPPWeex) 、 [原生 Kotlin Github客户端](https://github.com/CarGuo/GSYGithubAPPKotlin)
-### * [RxFFmpeg Android 的音视频编辑工具](https://github.com/microshow/RxFFmpeg)
-### * [oarplayer Rtmp播放器,基于MediaCodec与srs-librtmp,不依赖ffmpeg](https://github.com/qingkouwei/oarplayer)
-### * [RickText](https://github.com/CarGuo/RickText)
-### * [LazyRecyclerAdapter](https://github.com/CarGuo/LazyRecyclerAdapter)
 
 
-## 三、文档Wiki
+
+## 二、文档Wiki
 
 文档 | 传送门
 -------- | ---
@@ -218,22 +193,10 @@ ExoSourceManager.setExoMediaSourceInterceptListener(new ExoMediaSourceInterceptL
 
 ## 五、近期版本
 
-### v8.1.7-release-jitpack(2020-11-12)
+### **v8.1.8-lonbon**
 
-* update something
-
-### v8.1.6-jitpack(2020-09-13)
-
-* 增加支持横屏幕全屏和竖屏变化，屏幕不旋转，[SimpleActivity](./app/src/main/java/com/example/gsyvideoplayer/simple/SimpleActivity.java) [SimpleDetailActivityMode2](./app/src/main/java/com/example/gsyvideoplayer/simple/SimpleDetailActivityMode2.java)
-* 修复设置了超时，重试后失效的问题
-* 增加针对某些dataBinding的场景， 当context detach activity被回收会出现。
-* exo player 2.14.2
-* fix DataSource error
-
-
-### 非 androidx 版本为 6.0.3 以下版本。更多兼容版本请查阅版本更新。
-
-### 更多版本请查阅：[版本更新说明](https://github.com/CarGuo/GSYVideoPlayer/blob/master/doc/UPDATE_VERSION.md)
+- 依赖lonbon自己修改的ijkplayer项目，适配来邦自己的需求
+- 下面的版本是官方原生的版本
 
 ## 六、关于Issues
 
@@ -291,30 +254,3 @@ ExoSourceManager.setExoMediaSourceInterceptListener(new ExoMediaSourceInterceptL
 ## 依赖大小参考
 建议使用ndk过滤，详细参考 [参考第四条 ： 4、NDK的so支持](http://www.jianshu.com/p/86e4b336c17d)
 ![](https://ooo.0o0.ooo/2017/06/15/5941f343a39f5.png)
-
-
-
-
-## 非常感谢您的支持
-
-
-#### 撸码不易，如果对你有所帮助，欢迎您的赞赏
-
-![](http://img.cdn.guoshuyu.cn/thanks.jpg)
-
-
-
-### GSY新书：[《Flutter开发实战详解》](https://item.jd.com/12883054.html)上架啦：[京东](https://item.jd.com/12883054.html) / [当当](http://product.dangdang.com/28558519.html)
-
-[![](http://img.cdn.guoshuyu.cn/WechatIMG65.jpeg)](https://item.jd.com/12883054.html)
-
-
-
-
-## License
-
-```
-请参看IJKPlayer和AndroidVideoCache相关协议。
-项目最开始是从jiecao过来的，改着改着直接重构了。
-偶尔有一变量和方法名可能还有点jiaozi的影子，但是基本是一个新项目。
-```
