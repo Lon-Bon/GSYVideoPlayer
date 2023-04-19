@@ -45,23 +45,23 @@ allprojects {
 #### A、直接引入
 ```
  //完整版引入
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer:v8.1.7-20230419-2'
 ```
 
 #### B、添加java和你想要的so支持：
 
 ```
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.7-20230419-2'
 
  //是否需要ExoPlayer模式
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.7-20230419-2'
 
  //根据你的需求ijk模式的so
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-arm64:v8.1.8-lonbon'
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv7a:v8.1.8-lonbon'
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv5:v8.1.8-lonbon'
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x86:v8.1.8-lonbon'
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x64:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-arm64:v8.1.7-20230419-2'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv7a:v8.1.7-20230419-2'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-armv5:v8.1.7-20230419-2'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x86:v8.1.7-20230419-2'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-x64:v8.1.7-20230419-2'
 ```
 
 #### C、支持其他格式协议的（mpeg，rtsp, concat、crypto协议）
@@ -70,13 +70,13 @@ A、B普通版本支持263/264/265等，对于mpeg编码会有声音无画面情
 C 引入的so支持mpeg编码和其他补充协议，但是so包相对变大。
 
 ```
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-java:v8.1.7-20230419-2'
 
  //是否需要ExoPlayer模式
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:GSYVideoPlayer-exo2:v8.1.7-20230419-2'
 
  //更多ijk的编码支持
- implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-ex_so:v8.1.8-lonbon'
+ implementation 'com.github.Lon-Bon.GSYVideoPlayer:gsyVideoPlayer-ex_so:v8.1.7-20230419-2'
 
 ```
 
@@ -188,7 +188,7 @@ ExoSourceManager.setExoMediaSourceInterceptListener(new ExoMediaSourceInterceptL
 
 ## 五、近期版本
 
-### **v8.1.8-lonbon**
+### **v8.1.7-20230419-2**
 
 - 依赖lonbon自己修改的ijkplayer项目，适配来邦自己的需求
 - 下面的版本是官方原生的版本
