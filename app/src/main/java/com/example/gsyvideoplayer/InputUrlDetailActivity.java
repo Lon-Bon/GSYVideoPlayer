@@ -17,12 +17,22 @@ import com.example.gsyvideoplayer.databinding.ActivityEmptyBinding;
 import com.example.gsyvideoplayer.databinding.ActivityInputUrlDetailBinding;
 import com.example.gsyvideoplayer.video.LandLayoutVideo;
 import com.example.gsyvideoplayer.view.CustomInputDialog;
+import com.shuyu.aliplay.AliPlayerManager;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder;
 import com.shuyu.gsyvideoplayer.listener.GSYSampleCallBack;
 import com.shuyu.gsyvideoplayer.listener.LockClickListener;
+import com.shuyu.gsyvideoplayer.model.VideoOptionModel;
+import com.shuyu.gsyvideoplayer.player.PlayerFactory;
+import com.shuyu.gsyvideoplayer.utils.GSYVideoType;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 import com.shuyu.gsyvideoplayer.video.base.GSYVideoPlayer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import tv.danmaku.ijk.media.exo2.Exo2PlayerManager;
+import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 
 public class InputUrlDetailActivity extends AppCompatActivity {
 
@@ -42,12 +52,20 @@ public class InputUrlDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = ActivityInputUrlDetailBinding.inflate(getLayoutInflater());
+        PlayerFactory.setPlayManager(AliPlayerManager.class);
+//        List<VideoOptionModel> options = new ArrayList<>();
+//        // 强制使用特定解码器
+//        options.add(new VideoOptionModel(IjkMediaPlayer.OPT_CATEGORY_CODEC, "vcodec", "h264_mediacodec"));
+//        // 禁用分辨率变化处理（部分设备兼容）
+//        options.add(new VideoOptionModel(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec-handle-resolution-change", 0));
+//        GSYVideoManager.instance().setOptionModelList(options);
 
+        GSYVideoType.enableMediaCodec();
         View rootView = binding.getRoot();
         setContentView(rootView);
 
 
-        url = "https://res.exexm.com/cw_145225549855002";
+        url = "rtmp://192.168.4.239:1935/live/demo10";
 
         //增加封面
         ImageView imageView = new ImageView(this);

@@ -215,7 +215,7 @@ public class AudioDetailPlayer extends AppCompatActivity {
 
     private String getUrl() {
 
-        String url = "android.resource://" + getPackageName() + "/" + R.raw.test3;
+        String url = "android.resource://" + getPackageName() + "/" + R.raw.test_mp2;
         //注意，用ijk模式播放raw视频，这个必须打开
         GSYVideoManager.instance().enableRawPlay(getApplicationContext());
 

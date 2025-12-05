@@ -38,6 +38,9 @@ ext {
         exoPlayer2           : [
             "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}",
             "com.google.android.exoplayer:extension-rtmp:${exoPlayerVersion}"
+        ],
+        aliplay:  [
+            "com.aliyun.sdk.android:AliyunPlayer:6.21.0-full"
         ]
     ]
 
