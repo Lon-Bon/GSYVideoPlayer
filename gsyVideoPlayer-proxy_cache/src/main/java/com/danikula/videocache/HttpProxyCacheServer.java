@@ -185,8 +185,8 @@ public class HttpProxyCacheServer {
     }
 
     private String appendToProxyUrl(String url) {
-        //return String.format(Locale.US, "http://%s:%d/%s", PROXY_HOST, port, ProxyCacheUtils.encode(url));
-        return url;
+        return String.format(Locale.US, "http://%s:%d/%s", PROXY_HOST, port, ProxyCacheUtils.encode(url));
+        //return url;
     }
 
     private File getCacheFile(String url) {
